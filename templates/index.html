@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Hero Banner -->
+<div class="hero-banner text-center mb-5">
+  <img src="{{ url_for('static', filename='images/banner.png') }}" 
+       alt="Banner" 
+       class="img-fluid w-100 rounded shadow">
+</div>
+
+<!-- Centered Content -->
+<div class="container text-center mt-4">
+
+  <h1 class="display-4">Hello, I’m <span class="text-primary">Gunjan Jain</span></h1>
+  <h4 class="text-muted mb-4">Software Engineer | Data Engineer | Problem Solver</h4>
+  
+  <!-- About Me -->
+  <p class="lead mx-auto" style="max-width: 800px; text-align: justify;">
+    I am an <strong>aspiring Software Engineer</strong> and fresher with a strong interest in 
+    <strong>Data Analytics</strong>. I am skilled in <strong>Python</strong> and <strong>SQL</strong>, 
+    have knowledge of <strong>Core Java</strong>, and have also gained experience with 
+    <strong>HTML</strong>, <strong>CSS</strong>, <strong>Tableau</strong>, and <strong>Power BI</strong>.  
+    I am passionate about solving problems using <strong>Data Structures and Algorithms (DSA)</strong> 
+    and applying my skills to build efficient and innovative solutions.
+  </p>
+
+  <!-- Skills Section -->
+  <h2 class="mt-5">Skills</h2>
+  <p><strong>Programming Languages:</strong> Python, SQL, Core Java, HTML, CSS</p>
+  <p><strong>Data Visualization & Analytics Tools:</strong> Tableau, Power BI</p>
+  <p><strong>Core CS Fundamentals:</strong> Data Structures & Algorithms (DSA)</p>
+
+</div>
+
+{% endblock %}

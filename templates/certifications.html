@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Certifications</h2>
+<ul class="list-group">
+
+  <!-- Python Certificate -->
+  <li class="list-group-item">
+    <a href="https://www.coursera.org/account/accomplishments/verify/83ATH0TRDRS6" target="_blank">
+      Python – Coursera
+    </a>
+  </li>
+
+  <!-- Java Certificate -->
+  <li class="list-group-item">
+    <a href="https://www.coursera.org/account/accomplishments/specialization/SIEZWQJMAAFF" target="_blank">
+      Java – Coursera
+    </a>
+  </li>
+
+  <!-- Statistics Certificate -->
+  <li class="list-group-item">
+    <a href="https://www.coursera.org/account/accomplishments/verify/YMESZV3RDEOR" target="_blank">
+      Statistics – Coursera (IBM)
+    </a>
+  </li>
+
+  <!-- Paper Presentation -->
+  <li class="list-group-item">
+    <p><strong>Paper presentation at DICS 2025 –</strong> “Personalized Price Comparison: A Machine Learning Approach”</p>
+    <!-- Clickable Certificate Image -->
+    <a href="{{ url_for('static', filename='images/dics2025_certificate.jpeg') }}" target="_blank">
+      <img src="{{ url_for('static', filename='images/dics2025_certificate.jpeg') }}"
+           alt="DICS 2025 Certificate"
+           class="img-fluid rounded shadow-sm"
+           style="max-width:600px; cursor:pointer;">
+    </a>
+  </li>
+
+</ul>
+{% endblock %}
